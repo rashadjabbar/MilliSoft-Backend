@@ -1,0 +1,15 @@
+﻿.theadfixed {
+    top: 0;
+    position: fixed;
+    width: auto;
+    display: none;
+    border: none;
+}
+
+.theadscrollMore {
+    margin-top: 600px;
+}
+
+.theadup {
+    cursor: pointer;
+}

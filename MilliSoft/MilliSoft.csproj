@@ -1,0 +1,485 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9B88F964-0ED0-4465-B78A-332B0D59E152}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MilliSoft</RootNamespace>
+    <AssemblyName>MilliSoft</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44342</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\css\adminpanelanimation.css" />
+    <Content Include="Assets\css\animate.css" />
+    <Content Include="Assets\css\backend-plugin.min.css" />
+    <Content Include="Assets\css\backende209.css" />
+    <Content Include="Assets\css\bootstrap.css" />
+    <Content Include="Assets\css\custom-animate.css" />
+    <Content Include="Assets\css\flaticon.css" />
+    <Content Include="Assets\css\font-awesome.css" />
+    <Content Include="Assets\css\images\ui-icons_444444_256x240.png" />
+    <Content Include="Assets\css\images\ui-icons_777620_256x240.html" />
+    <Content Include="Assets\css\images\ui-icons_777777_256x240.html" />
+    <Content Include="Assets\css\images\ui-icons_cc0000_256x240.html" />
+    <Content Include="Assets\css\jquery-ui.css" />
+    <Content Include="Assets\css\jquery.bootstrap-touchspin.css" />
+    <Content Include="Assets\css\jquery.fancybox.min.css" />
+    <Content Include="Assets\css\jquery.mCustomScrollbar.min.css" />
+    <Content Include="Assets\css\main.css" />
+    <Content Include="Assets\css\mCSB_buttons.html" />
+    <Content Include="Assets\css\owl.css" />
+    <Content Include="Assets\css\owl.video.play.html" />
+    <Content Include="Assets\css\responsive.css" />
+    <Content Include="Assets\css\swiper.css" />
+    <Content Include="Assets\fonts\flaticon.svg" />
+    <Content Include="Assets\fonts\fontawesome-webfont914c.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Assets\images\background\1.png" />
+    <Content Include="Assets\images\background\2.jpg" />
+    <Content Include="Assets\images\background\3.png" />
+    <Content Include="Assets\images\background\pattern-1.png" />
+    <Content Include="Assets\images\background\pattern-2.png" />
+    <Content Include="Assets\images\background\pattern-3.png" />
+    <Content Include="Assets\images\dark-loader.gif" />
+    <Content Include="Assets\images\error\404-dark.png" />
+    <Content Include="Assets\images\error\404.png" />
+    <Content Include="Assets\images\error\500-dark.png" />
+    <Content Include="Assets\images\error\500.png" />
+    <Content Include="Assets\images\error\maintenance.png" />
+    <Content Include="Assets\images\favicon.png" />
+    <Content Include="Assets\images\footer-logo-2.png" />
+    <Content Include="Assets\images\footer-logo.png" />
+    <Content Include="Assets\images\icons\dotted-layer-1.png" />
+    <Content Include="Assets\images\icons\dotted-layer-2.png" />
+    <Content Include="Assets\images\icons\dotted-layer-3.png" />
+    <Content Include="Assets\images\icons\dotted-layer.png" />
+    <Content Include="Assets\images\icons\icon-1.png" />
+    <Content Include="Assets\images\icons\icon-2.png" />
+    <Content Include="Assets\images\icons\icon-3.png" />
+    <Content Include="Assets\images\icons\icon-4.png" />
+    <Content Include="Assets\images\icons\icon-5.png" />
+    <Content Include="Assets\images\icons\icon-6.png" />
+    <Content Include="Assets\images\icons\icon-7.png" />
+    <Content Include="Assets\images\icons\icon-8.png" />
+    <Content Include="Assets\images\icons\icon-9.png" />
+    <Content Include="Assets\images\icons\preloader.svg" />
+    <Content Include="Assets\images\icons\waves-shape.png" />
+    <Content Include="Assets\images\icon\pdf.png" />
+    <Content Include="Assets\images\layouts\layout-1\prod-1.jpg" />
+    <Content Include="Assets\images\layouts\layout-1\prod-2.jpg" />
+    <Content Include="Assets\images\layouts\layout-1\prod-3.jpg" />
+    <Content Include="Assets\images\layouts\layout-1\prod-4.jpg" />
+    <Content Include="Assets\images\layouts\layout-1\side-bkg.png" />
+    <Content Include="Assets\images\loader.gif" />
+    <Content Include="Assets\images\logo-2.png" />
+    <Content Include="Assets\images\logo-3.png" />
+    <Content Include="Assets\images\logo-4.png" />
+    <Content Include="Assets\images\logo-5.png" />
+    <Content Include="Assets\images\logo.png" />
+    <Content Include="Assets\images\main-slider\1.png" />
+    <Content Include="Assets\images\main-slider\content-image-2.png" />
+    <Content Include="Assets\images\main-slider\content-image.png" />
+    <Content Include="Assets\images\main-slider\pattern-layer-1.png" />
+    <Content Include="Assets\images\main-slider\pattern-layer-2.png" />
+    <Content Include="Assets\images\page-img\08.jpg" />
+    <Content Include="Assets\images\page-img\09.jpg" />
+    <Content Include="Assets\images\page-img\10.jpg" />
+    <Content Include="Assets\images\page-img\11.jpg" />
+    <Content Include="Assets\images\page-img\12.jpg" />
+    <Content Include="Assets\images\page-img\13.jpg" />
+    <Content Include="Assets\images\page-img\14.jpg" />
+    <Content Include="Assets\images\page-img\card.jpg" />
+    <Content Include="Assets\images\resource\author-1.jpg" />
+    <Content Include="Assets\images\resource\author-10.jpg" />
+    <Content Include="Assets\images\resource\author-11.jpg" />
+    <Content Include="Assets\images\resource\author-12.jpg" />
+    <Content Include="Assets\images\resource\author-13.jpg" />
+    <Content Include="Assets\images\resource\author-14.jpg" />
+    <Content Include="Assets\images\resource\author-2.jpg" />
+    <Content Include="Assets\images\resource\author-3.jpg" />
+    <Content Include="Assets\images\resource\author-4.jpg" />
+    <Content Include="Assets\images\resource\author-5.jpg" />
+    <Content Include="Assets\images\resource\author-6.jpg" />
+    <Content Include="Assets\images\resource\author-7.jpg" />
+    <Content Include="Assets\images\resource\author-8.jpg" />
+    <Content Include="Assets\images\resource\author-9.jpg" />
+    <Content Include="Assets\images\resource\banner.png" />
+    <Content Include="Assets\images\resource\book-1.jpg" />
+    <Content Include="Assets\images\resource\book-10.jpg" />
+    <Content Include="Assets\images\resource\book-11.jpg" />
+    <Content Include="Assets\images\resource\book-12.jpg" />
+    <Content Include="Assets\images\resource\book-13.jpg" />
+    <Content Include="Assets\images\resource\book-14.jpg" />
+    <Content Include="Assets\images\resource\book-15.jpg" />
+    <Content Include="Assets\images\resource\book-16.jpg" />
+    <Content Include="Assets\images\resource\book-17.jpg" />
+    <Content Include="Assets\images\resource\book-18.jpg" />
+    <Content Include="Assets\images\resource\book-2.jpg" />
+    <Content Include="Assets\images\resource\book-3.jpg" />
+    <Content Include="Assets\images\resource\book-4.jpg" />
+    <Content Include="Assets\images\resource\book-5.jpg" />
+    <Content Include="Assets\images\resource\book-6.jpg" />
+    <Content Include="Assets\images\resource\book-7.jpg" />
+    <Content Include="Assets\images\resource\book-8.jpg" />
+    <Content Include="Assets\images\resource\book-9.jpg" />
+    <Content Include="Assets\images\resource\course-1.jpg" />
+    <Content Include="Assets\images\resource\course-10.jpg" />
+    <Content Include="Assets\images\resource\course-11.jpg" />
+    <Content Include="Assets\images\resource\course-12.jpg" />
+    <Content Include="Assets\images\resource\course-13.jpg" />
+    <Content Include="Assets\images\resource\course-14.jpg" />
+    <Content Include="Assets\images\resource\course-15.jpg" />
+    <Content Include="Assets\images\resource\course-16.jpg" />
+    <Content Include="Assets\images\resource\course-17.jpg" />
+    <Content Include="Assets\images\resource\course-18.jpg" />
+    <Content Include="Assets\images\resource\course-19.jpg" />
+    <Content Include="Assets\images\resource\course-2.jpg" />
+    <Content Include="Assets\images\resource\course-20.jpg" />
+    <Content Include="Assets\images\resource\course-21.jpg" />
+    <Content Include="Assets\images\resource\course-22.jpg" />
+    <Content Include="Assets\images\resource\course-23.jpg" />
+    <Content Include="Assets\images\resource\course-24.jpg" />
+    <Content Include="Assets\images\resource\course-25.jpg" />
+    <Content Include="Assets\images\resource\course-26.jpg" />
+    <Content Include="Assets\images\resource\course-27.jpg" />
+    <Content Include="Assets\images\resource\course-28.jpg" />
+    <Content Include="Assets\images\resource\course-3.jpg" />
+    <Content Include="Assets\images\resource\course-4.jpg" />
+    <Content Include="Assets\images\resource\course-5.jpg" />
+    <Content Include="Assets\images\resource\course-6.jpg" />
+    <Content Include="Assets\images\resource\course-7.jpg" />
+    <Content Include="Assets\images\resource\course-8.jpg" />
+    <Content Include="Assets\images\resource\course-9.jpg" />
+    <Content Include="Assets\images\resource\education-1.png" />
+    <Content Include="Assets\images\resource\education-2.html" />
+    <Content Include="Assets\images\resource\education-2.jpg" />
+    <Content Include="Assets\images\resource\education-3.html" />
+    <Content Include="Assets\images\resource\education-3.jpg" />
+    <Content Include="Assets\images\resource\education.png" />
+    <Content Include="Assets\images\resource\error.png" />
+    <Content Include="Assets\images\resource\image-1.jpg" />
+    <Content Include="Assets\images\resource\institute-1.jpg" />
+    <Content Include="Assets\images\resource\institute-2.jpg" />
+    <Content Include="Assets\images\resource\institute-3.jpg" />
+    <Content Include="Assets\images\resource\news-1.jpg" />
+    <Content Include="Assets\images\resource\news-2.jpg" />
+    <Content Include="Assets\images\resource\post-thumb-1.jpg" />
+    <Content Include="Assets\images\resource\post-thumb-2.jpg" />
+    <Content Include="Assets\images\resource\post-thumb-3.jpg" />
+    <Content Include="Assets\images\resource\price-icon-1.png" />
+    <Content Include="Assets\images\resource\price-icon-2.png" />
+    <Content Include="Assets\images\resource\price-icon-3.png" />
+    <Content Include="Assets\images\resource\price-icon-4.png" />
+    <Content Include="Assets\images\resource\price-icon-5.png" />
+    <Content Include="Assets\images\resource\price-icon-6.png" />
+    <Content Include="Assets\images\resource\program.png" />
+    <Content Include="Assets\images\resource\student-1.jpg" />
+    <Content Include="Assets\images\resource\student-2.jpg" />
+    <Content Include="Assets\images\resource\video-image-1.jpg" />
+    <Content Include="Assets\images\resource\video-image.jpg" />
+    <Content Include="Assets\images\small\flag-01.png" />
+    <Content Include="Assets\images\small\flag-02.png" />
+    <Content Include="Assets\images\small\flag-03.png" />
+    <Content Include="Assets\images\small\flag-04.png" />
+    <Content Include="Assets\images\small\flag-05.png" />
+    <Content Include="Assets\images\small\flag-06.png" />
+    <Content Include="Assets\images\small\img-1.jpg" />
+    <Content Include="Assets\images\sort_asc.png" />
+    <Content Include="Assets\images\sort_asc_disabled.png" />
+    <Content Include="Assets\images\sort_both.png" />
+    <Content Include="Assets\images\sort_desc.png" />
+    <Content Include="Assets\images\sort_desc_disabled.png" />
+    <Content Include="Assets\images\user\1.jpg" />
+    <Content Include="Assets\images\user\2.jpg" />
+    <Content Include="Assets\images\user\3.jpg" />
+    <Content Include="Assets\images\user\4.jpg" />
+    <Content Include="Assets\images\user\5.jpg" />
+    <Content Include="Assets\images\user\6.jpg" />
+    <Content Include="Assets\images\user\7.jpg" />
+    <Content Include="Assets\images\white-logo-2.png" />
+    <Content Include="Assets\images\white-logo.png" />
+    <Content Include="Assets\js\app.js" />
+    <Content Include="Assets\js\appear.js" />
+    <Content Include="Assets\js\backend-bundle.min.js" />
+    <Content Include="Assets\js\bootstrap.min.js" />
+    <Content Include="Assets\js\chart-custom.js" />
+    <Content Include="Assets\js\charts\01.js" />
+    <Content Include="Assets\js\charts\02.js" />
+    <Content Include="Assets\js\countdown.js" />
+    <Content Include="Assets\js\customizer.js" />
+    <Content Include="Assets\js\darkmodeanimation.js" />
+    <Content Include="Assets\js\element-in-view.js" />
+    <Content Include="Assets\js\flex-tree.min.js" />
+    <Content Include="Assets\js\imagesloaded.pkgd.min.js" />
+    <Content Include="Assets\js\jquery-ui.js" />
+    <Content Include="Assets\js\jquery.countdown.js" />
+    <Content Include="Assets\js\jquery.easing.min.js" />
+    <Content Include="Assets\js\jquery.fancybox.js" />
+    <Content Include="Assets\js\jquery.js" />
+    <Content Include="Assets\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="Assets\js\jquery.paroller.min.js" />
+    <Content Include="Assets\js\jquery.scrollTo.js" />
+    <Content Include="Assets\js\mapbox-gl.js" />
+    <Content Include="Assets\js\mapbox.js" />
+    <Content Include="Assets\js\masonry.pkgd.min.js" />
+    <Content Include="Assets\js\owl.js" />
+    <Content Include="Assets\js\parallax.min.js" />
+    <Content Include="Assets\js\popper.min.js" />
+    <Content Include="Assets\js\script.js" />
+    <Content Include="Assets\js\slider.js" />
+    <Content Include="Assets\js\sweetalert.js" />
+    <Content Include="Assets\js\swiper.min.js" />
+    <Content Include="Assets\js\table-treeview.js" />
+    <Content Include="Assets\js\tilt.jquery.min.js" />
+    <Content Include="Assets\js\tree.js" />
+    <Content Include="Assets\js\validate.js" />
+    <Content Include="Assets\js\vector-map-custom.js" />
+    <Content Include="Assets\js\wow.js" />
+    <Content Include="MilliSoft-Admin-Panel-Elaqe-Melumatlari-Cedvel.aspx" />
+    <Content Include="MilliSoft-Admin-Panel-Elaqe-Melumatlari.aspx" />
+    <Content Include="MilliSoft-Admin-Panel-Komanda-Cedvel.aspx" />
+    <Content Include="MilliSoft-Admin-Panel-Komandamiz.aspx" />
+    <Content Include="MilliSoft-Admin-Panel-Niye-biz-Cedvel.aspx" />
+    <Content Include="MilliSoft-Admin-Panel-Niye-biz.aspx" />
+    <Content Include="MilliSoft-Admin-Panel-Paketler-Cedvel.aspx" />
+    <Content Include="MilliSoft-Admin-Panel-Paketler.aspx" />
+    <Content Include="MilliSoft-Admin-Panel-Home.aspx" />
+    <Content Include="MilliSoft-Admin-Panel-İstifadeci-Mesajlari-Cedvel.aspx" />
+    <Content Include="Assets\vendor\%40fortawesome\fontawesome-free\css\all.min.css" />
+    <Content Include="Assets\vendor\%40icon\dripicons\dripicons.css" />
+    <Content Include="Assets\vendor\%40icon\dripicons\dripicons.svg" />
+    <Content Include="Assets\vendor\emoji-picker-element\index.js" />
+    <Content Include="Assets\vendor\fullcalendar\core\main.css" />
+    <Content Include="Assets\vendor\fullcalendar\core\main.js" />
+    <Content Include="Assets\vendor\fullcalendar\daygrid\main.css" />
+    <Content Include="Assets\vendor\fullcalendar\daygrid\main.js" />
+    <Content Include="Assets\vendor\fullcalendar\list\main.css" />
+    <Content Include="Assets\vendor\fullcalendar\list\main.js" />
+    <Content Include="Assets\vendor\fullcalendar\timegrid\main.css" />
+    <Content Include="Assets\vendor\fullcalendar\timegrid\main.js" />
+    <Content Include="Assets\vendor\line-awesome\dist\line-awesome\css\line-awesome.min.css" />
+    <Content Include="Assets\vendor\mapbox\mapbox-gl.css" />
+    <Content Include="Assets\vendor\remixicon\fonts\remixicon.css" />
+    <Content Include="Assets\vendor\remixicon\fonts\remixicondf6d.svg" />
+    <Content Include="Web.config" />
+    <Content Include="MilliSoft.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MilliSoft-Admin-Panel-Elaqe-Melumatlari-Cedvel.aspx.cs">
+      <DependentUpon>MilliSoft-Admin-Panel-Elaqe-Melumatlari-Cedvel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MilliSoft-Admin-Panel-Elaqe-Melumatlari-Cedvel.aspx.designer.cs">
+      <DependentUpon>MilliSoft-Admin-Panel-Elaqe-Melumatlari-Cedvel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MilliSoft-Admin-Panel-Elaqe-Melumatlari.aspx.cs">
+      <DependentUpon>MilliSoft-Admin-Panel-Elaqe-Melumatlari.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MilliSoft-Admin-Panel-Elaqe-Melumatlari.aspx.designer.cs">
+      <DependentUpon>MilliSoft-Admin-Panel-Elaqe-Melumatlari.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MilliSoft-Admin-Panel-Komanda-Cedvel.aspx.cs">
+      <DependentUpon>MilliSoft-Admin-Panel-Komanda-Cedvel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MilliSoft-Admin-Panel-Komanda-Cedvel.aspx.designer.cs">
+      <DependentUpon>MilliSoft-Admin-Panel-Komanda-Cedvel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MilliSoft-Admin-Panel-Komandamiz.aspx.cs">
+      <DependentUpon>MilliSoft-Admin-Panel-Komandamiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MilliSoft-Admin-Panel-Komandamiz.aspx.designer.cs">
+      <DependentUpon>MilliSoft-Admin-Panel-Komandamiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MilliSoft-Admin-Panel-Niye-biz-Cedvel.aspx.cs">
+      <DependentUpon>MilliSoft-Admin-Panel-Niye-biz-Cedvel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MilliSoft-Admin-Panel-Niye-biz-Cedvel.aspx.designer.cs">
+      <DependentUpon>MilliSoft-Admin-Panel-Niye-biz-Cedvel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MilliSoft-Admin-Panel-Niye-biz.aspx.cs">
+      <DependentUpon>MilliSoft-Admin-Panel-Niye-biz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MilliSoft-Admin-Panel-Niye-biz.aspx.designer.cs">
+      <DependentUpon>MilliSoft-Admin-Panel-Niye-biz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MilliSoft-Admin-Panel-Paketler-Cedvel.aspx.cs">
+      <DependentUpon>MilliSoft-Admin-Panel-Paketler-Cedvel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MilliSoft-Admin-Panel-Paketler-Cedvel.aspx.designer.cs">
+      <DependentUpon>MilliSoft-Admin-Panel-Paketler-Cedvel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MilliSoft-Admin-Panel-Paketler.aspx.cs">
+      <DependentUpon>MilliSoft-Admin-Panel-Paketler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MilliSoft-Admin-Panel-Paketler.aspx.designer.cs">
+      <DependentUpon>MilliSoft-Admin-Panel-Paketler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MilliSoft-Admin-Panel-Home.aspx.cs">
+      <DependentUpon>MilliSoft-Admin-Panel-Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MilliSoft-Admin-Panel-Home.aspx.designer.cs">
+      <DependentUpon>MilliSoft-Admin-Panel-Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MilliSoft-Admin-Panel-İstifadeci-Mesajlari-Cedvel.aspx.cs">
+      <DependentUpon>MilliSoft-Admin-Panel-İstifadeci-Mesajlari-Cedvel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MilliSoft-Admin-Panel-İstifadeci-Mesajlari-Cedvel.aspx.designer.cs">
+      <DependentUpon>MilliSoft-Admin-Panel-İstifadeci-Mesajlari-Cedvel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MilliSoft.aspx.cs">
+      <DependentUpon>MilliSoft.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MilliSoft.aspx.designer.cs">
+      <DependentUpon>MilliSoft.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Milli soft I Admin Panel.Master.cs">
+      <DependentUpon>Milli soft I Admin Panel.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Milli soft I Admin Panel.Master.designer.cs">
+      <DependentUpon>Milli soft I Admin Panel.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SQL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\fonts\flaticon.eot" />
+    <Content Include="Assets\fonts\flaticon.ttf" />
+    <Content Include="Assets\fonts\flaticon.woff" />
+    <Content Include="Assets\fonts\flaticond41d.eot" />
+    <Content Include="Assets\fonts\fontawesome-webfont914c.eot" />
+    <Content Include="Assets\fonts\fontawesome-webfont914c.ttf" />
+    <Content Include="Assets\fonts\fontawesome-webfont914c.woff" />
+    <Content Include="Assets\fonts\fontawesome-webfont914c.woff2" />
+    <Content Include="Assets\fonts\fontawesome-webfontd41d.eot" />
+    <None Include="packages.config" />
+    <Content Include="Milli soft I Admin Panel.Master" />
+    <Content Include="Assets\vendor\%40icon\dripicons\dripicons.eot" />
+    <Content Include="Assets\vendor\%40icon\dripicons\dripicons.ttf" />
+    <Content Include="Assets\vendor\%40icon\dripicons\dripicons.woff" />
+    <Content Include="Assets\vendor\%40icon\dripicons\dripiconsd41d.eot" />
+    <Content Include="Assets\vendor\remixicon\fonts\remixicondf6d.eot" />
+    <Content Include="Assets\vendor\remixicon\fonts\remixicondf6d.ttf" />
+    <Content Include="Assets\vendor\remixicon\fonts\remixicondf6d.woff" />
+    <Content Include="Assets\vendor\remixicon\fonts\remixicondf6d.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62290</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44342/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
